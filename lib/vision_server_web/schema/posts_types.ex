@@ -1,5 +1,5 @@
 defmodule VisionServerWeb.Schema.PostsTypes do
-  use Absinthe.Schema.Mutation
+  use Absinthe.Schema.Notation
 
   object :photo do
     field(:id, non_null(:id))
@@ -10,3 +10,5 @@ defmodule VisionServerWeb.Schema.PostsTypes do
     field(:updated_at, non_null(:string))
   end
 end
+
+# should be imported explicitly in schema.ex

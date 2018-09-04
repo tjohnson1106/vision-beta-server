@@ -17,6 +17,9 @@ defmodule VisionServer.Posts do
       [%Photo{}, ...]
 
   """
+
+  ## Do we need to implement preload here?
+
   def list_photos do
     Repo.all(Photo)
   end
